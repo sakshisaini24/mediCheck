@@ -20,11 +20,7 @@ export default function Navbar() {
         <li className="nav-item">
           <Link className="nav-link active" aria-current="page" to="/">Home</Link>
         </li>
-        {(localStorage.getItem("authToken"))?
-        <li className="nav-item">
-        <Link className="nav-link active" aria-current="page" to="/">Hello Coustomer!</Link>
-      </li>
-     :"" }
+        
       </ul>
       {!(localStorage.getItem("authToken"))?
       <div className='d-flex'> 

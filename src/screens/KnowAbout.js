@@ -12,9 +12,11 @@ export default function KnowAbout(props) {
             <img src={propsData.docImage} className="rounded mx-auto h-50 w-50 d-block hover-zoom mb-3" alt="..." />
             
             <div className="text-center">{propsData.docdes}</div>
+            
             <div class="container w-100">
-                <Link to="/pay" state={propsData} className=" btn m-2 h-70 w-50 bg-info">Consult from {propsData.docname} Now!</Link>
-            </div>
+        <Link to="/pay" state={propsData} className=" btn m-2 h-70 w-50 bg-info">Consult from {propsData.docname} Now!</Link>
+    </div> 
+
         </div>
     )
 }

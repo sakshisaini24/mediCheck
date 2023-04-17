@@ -40,7 +40,6 @@ export default function Payment(props) {
 
                 <button className='btn m-2 h-50 w-50 bg-info' onChange={(e) => setamount(500)} onClick={handleSubmit} >Pay ₹ 500</button>
                 
-                
             </div>
         </div>
     )
