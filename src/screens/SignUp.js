@@ -21,7 +21,7 @@ function SignUp() {
                 password,
             }),
         })
-
+        
         const data = await response.json()
 
         if(!data.success){
@@ -40,12 +40,12 @@ function SignUp() {
                 <div className="row d-flex justify-content-center align-items-center h-100">
                     <div className="col-md-9 col-lg-6 col-xl-5">
                         <img src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-login-form/draw2.webp"
-                            className="img-fluid" alt="Sample image" />
+                            className="img-fluid" alt="..." />
                     </div>
                     <div className="col-md-8 col-lg-6 col-xl-4 offset-xl-1">
                         <form onSubmit={signupUser}>
                             <div className="mb-3">
-                                <label forhtml="name1" className="form-label">Email: </label>
+                                <label forhtml="name1" className="form-label">Name: </label>
                                 <input
                                     value={name} className="form-control"
                                     onChange={(e) => setName(e.target.value)}
@@ -71,8 +71,8 @@ function SignUp() {
                                     placeholder="Password"
                                 />
                             </div>
-                            <input type="submit" value="Login" class="m3 btn btn-primary bg-info" />
-                            <Link to="/createuser" className="m3 btn btn-danger">New User?</Link>
+                            <Link to="/"  class="m3 btn btn-primary bg-info" >Sign Up</Link>
+                            <Link to="/loginuser" className="m3 btn btn-danger">Already A User?</Link>
                         </form>
                     </div>
                 </div>

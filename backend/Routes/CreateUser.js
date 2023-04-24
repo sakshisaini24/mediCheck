@@ -22,6 +22,7 @@ router.post("/createuser", body('email').isEmail(), body('name').isLength({ min:
                 email: req.body.email,
                 password: secPassword,
             })
+            
         } catch (error) {
             console.log(error)
             res.json({ success: false });
